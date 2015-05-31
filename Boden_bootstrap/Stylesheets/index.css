@@ -1,0 +1,109 @@
+body{background-color: black;}
+
+/*-HEADER--------------------*/
+.top{
+	height: 200px;
+	background-color: rgba(0, 153, 51, 0.8);
+}
+.top_img{
+	position: absolute;
+	height: 200px;
+	position: absolute;
+	margin-right: 50px;
+}
+#logo{
+	position: relative;
+	text-align: center;
+	background-color: rgba(0, 153, 51, 0.5); 
+}
+#logo_img_text{
+	width: 150px;
+	height: 150px;
+	margin-bottom: -70px;
+	z-index: 1;
+	text-shadow: 2px 2px rgba(41, 61, 61, 0.9);
+}
+#under_boden{
+	font-family:sans-serif;
+	font-size: 16px;
+	color:white;
+	margin-right: 10px;
+	margin-bottom: -150px;
+	z-index: 1;
+	text-shadow: 2px 2px rgba(41, 61, 61, 0.9);
+	padding-top: 30px;
+}
+h1{
+	font-family: Bodoni MT Black;
+	padding: 30px 20px;
+	color: white;
+	text-align: right;
+}
+a{
+	text-decoration: none;
+	display: block;
+	}
+/*-END-HEADER-------------------*/
+
+
+/*-CENTER-INFO-------------------*/
+.row1{
+	background-color: rgba(41, 61, 61, 0.5);
+	padding-top: 80px;
+	height: 500px;
+	margin-top: 10px;
+}
+.cont{
+	height: 300px;
+	text-align: center;
+	border-right: 2px solid white;
+	border-left: 2px solid white;
+	font-family:sans-serif;
+	font-size: 15px;
+	color:white;
+	padding: 15px 15px 35px 15px;
+	margin-bottom: 40px;
+}
+/*-END-CENTER-INFO---------*/
+
+/*-DEVELOPER-INFO----------*/
+#row3{
+	height: 25px;
+	background-color: black;
+	margin-top: 10px;
+	text-align: right;
+
+	font-family: Bodoni MT Black;
+	font-size: 12px;
+	color: white;
+}
+/*-END-DEVELOPER-INFO------*/
+
+
+
+@media only screen and (max-width:767px) {
+    
+    .info#companyInfo_MailForm{height: 100%;}
+    
+    #goToEmailFormButton{margin-bottom: 50px;}
+    
+    .info#companyInfo_MailForm{border-top: 2px solid white;}
+
+}
+@media only screen and (max-width:450px) {
+	#goBackButton{
+		position: absolute;
+		margin-top: 2px;
+		margin-left: 40%;
+	}
+
+}
+@media only screen and (max-width:480px){
+	#map-canvas{
+		display: none;
+	}
+	#pogoda{
+		display: none;
+	}
+}
+

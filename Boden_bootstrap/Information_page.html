@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="Stylesheets/information_page.css">
+  <link rel="stylesheet" href="Stylesheets/companyInfo.css">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/boden.js"></script>
+
+<!--For-Email-Form-Verification-->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('validateCtrl', function($scope) {
+            $scope.user = 'John Doe';
+            $scope.email = 'john.doe@gmail.com';
+        });
+    </script>
+<!--End-Email-Form-Verification-->
+
+  </head>
+
+<body>
+  <div class="container">
+
+<!--Header-->    
+    <div class="row col-lg-9  col-md-11  col-xs-12  col-sm-10" id="row1"> 
+        <div class="page-header" id="page_header_inf">
+         <a href="index.html"> <h1 id="h1_header" class="cursor_pointer"><img src="res/logo.png" id="logo">Boden</h1><br><p id="small" class="cursor_pointer">Науково-дослідне приватне підприємство</p></a>
+        </div>
+    </div>
+<!--END-Header-->
+   
+
+<!-Carousel-gallery------->
+  <div id="myCarousel" class="carousel slide row col-lg-9 col-md-11 col-xs-12 col-sm-10" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="img-responsive center-block" src="res/galery_img/gall_1.png" alt="">
+          <div class="carousel-caption">
+            <h3 class="galery_text">Швидко</h3>
+            <p class="galery_text">Оперативний виїзд бригади на досліджувальний об'єкт та надання технічного звіту в максималь короткий термін для замовника</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img class="img-responsive center-block" src="res/galery_img/gall_2.png" alt="">
+          <div class="carousel-caption">
+            <h3 class="galery_text">Якісно</h3>
+            <p class="galery_text">Висока якість надання послуг, ретельне обстеження об'єкту дослідження фахівцями ЕВЛ з високим рівнем кваліфікації та відповідною групою допуску з електробезпеки</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img class="img-responsive center-block" src="res/galery_img/gall_3.png" alt="">
+          <div class="carousel-caption">
+            <h3 class="galery_text">Доступно</h3>
+            <p class="galery_text">Лояльна вартість та гнучка система знижок</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img class="img-responsive center-block" src="res/galery_img/gall_4.png" alt="">
+          <div class="carousel-caption">
+            <h3 class="galery_text">Надійно</h3>
+            <p class="galery_text">Широкий спектр високоточних та якісних вимірювальних засобів та приладів контролю, які проходять щорічну повірку Центром Стандартизації та Сертифікації України</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      </a>
+  </div>
+<!-END-Carousel-gallery--->
+
+  <div class="row">
+<!---Information-Content-->      
+      <div id="cont" class="col-lg-9 col-md-9 col-sm-9">
+        <div class="page-header cont_header" >
+          <h1 id="one">Галузь атестації електровимірювальної лабораторії  ПП ”Боден”<h4>на право проведення вимірювань у сфері поширення державного метрологічного нагляду:</h4>
+          </h1>
+        </div>
+        <p class="cont_text">
+        <h3>Комплексні розподільчі пристрої установки внутрішньої і зовнішньої установки до 10 кВ:
+        </h3>
+        <strong>Електричний опір (Опір ізоляції):</strong> первинних кіл(0-10000 МОм 2500 В), вторинних кіл(0-20000 МОм 1000 В).
+        <h3>Збірні з'єднювальні шини вище 1000 В:</h3>
+        <strong>Опір ізоляції: </strong> 0-100000 МОм.
+        <h3>Паперово-масляні конденсатори до 6 кВ:</h3>
+        <strong>Опір ізоляції:</strong> 0-100000 МОм.
+        <h3>Електричні апарати, вторинні кола, електропроводка напругою до 1000 В:</h3>
+        <strong>Опір ізоляції:</strong> 0-10000 Мом 2500 В.
+        <h3>Заземлюючі пристрої:</h3>
+        <strong>Електричний опір і електричний струм:</strong> cтрум КЗ петлі фаза-нуль в ел.установках до 1000 В з глухим заземленням нейтралі 0-2000 А.<br>
+        <strong>Опір заземлюючого пристрою:</strong> 0,1-1000 Ом.
+        <h3>Силові кабельні лінії:</h3>
+        <strong>Опір ізоляції:</strong> 0-10000 МОм 2500 В.
+        <h3>Електродвигуни змінного струму:</h3>
+        <strong>Опір ізоляції:</strong> 0-20000 Мом 1000 В 2500 В.<br>
+        <strong>Вимірювання опору постійного струму обмоток:</strong> 0,005-999900 МОм.
+        <h3>Силові трансформатори, автотрансформатори:</h3>
+        <strong>Опір ізоляції:</strong> 0-10000 МОм 2500 В.<br>
+        <strong>Коефіцієнт трансформації(ел.напруга): Перевірка коефіцієнту трансформації: </strong>  600 В.
+        <h3>Вимірювальні трансформатори:</h3>
+        <strong>Опір ізоляції:</strong> 0-200000 Мом 1000 В 2500 В.
+        <h3>Роз'єднювальні, короткозамикачі і відділювачі:</h3>
+        <strong>Опір ізоляції:</strong> 0-200000 Мом 1000 В 2500 В.<br>
+        <strong>Опір постійого струму обмоток:</strong> 0,005-999900 МОм.
+        <h3>Масляні вимикачі:</h3>
+        <strong>Опір ізоляції:</strong> 0-10000 МОм.
+        <h3>Ввідні прохідні ізолятори:</h3>
+        <strong>Опір ізоляції:</strong> 0-10000 МОм.
+        <h3>Запобіжники напругою вище 1000 В:</h3>
+        <strong>Визначення цілісності плавких вставок:</strong> 0,005-999900 МОм.
+        <h3>Перетворювачі електричної енергії і пристрої:</h3>
+        <strong>Опір ізоляції:</strong> 0-20000 Мом 2500 В.
+        <h3>Переносний електрофікований інструмент і понижуючі трансформатори:</h3> 
+        <strong>Опір ізоляції:</strong> 0-10000 Мом 2500 В
+        </p>
+
+        <div class="page-header cont_header" >
+          <h1 id="two">Результат проведення досліджень та перевірки об'єкту</h1>
+        </div>
+        <p class="cont_text">По результатам вимірювань в обов’язковому порядку видаються рекомендації по приведенню об’єктів в належний стан у відповідність вимогам ПУЕ, ПБЕ та ПТЕ ЕС, по можливості  усувати встановлені недоліки.Результати вимірювань аналізуються, заносяться у протоколи вимірювань, в    
+         яких робиться висновок про можливість використання електрообладнання та видається технічний звіт по електровимірювальним дослідженням,випробуванням:</p>
+
+        
+
+        <div class="page-header cont_header">
+          <h1 id="three">Page header THREE</h1>
+        </div>
+        <p class="cont_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="page-header cont_header" >
+          <h1 id="four">Page header FOUR</h1>
+        </div>
+        <p class="cont_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="page-header cont_header" >
+          <h1 id="five">Page header FIVE</h1>
+        </div>
+        <p class="cont_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="page-header cont_header" >
+          <h1 id="six">Page header SIX</h1>
+        </div>
+        <p class="cont_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="page-header cont_header" >
+          <h1 id="seven">Page header SEVEN</h1>
+        </div>
+        <p class="cont_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        
+        <div class="page-header cont_header">
+          <h1 id="eight">Page header eight</h1>
+        </div>
+        <p class="cont_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+<!--END-Information-Content-->
+
+<!--Menu-->
+      <div id="under_menu" class="col-lg-1 col-md-1 col-sm-1">
+         <div id="menu" class="col-lg-3 col-md-3 col-sm-3"> 
+          <p class="menu_item" id="item_1">Галузь атестації ЕВЛ ПП ”Боден”</p>
+          <p class="menu_item" id="item_2">Результат проведення досліджень та перевірки</p>
+          <p class="menu_item" id="item_3">Page header 3</p>
+          <p class="menu_item" id="item_4">Page header 4</p>
+          <p class="menu_item" id="item_5">Page header 5</p>
+          <p class="menu_item" id="item_6">Page header 6</p>
+          <p class="menu_item" id="item_7">Page header 7</p>
+          <p class="menu_item" id="item_8">Page header 8</p>
+        </div>
+      </div>
+<!--END-Menu-->
+  </div>
+
+<!--COMPANY-INFO-FORM-->
+            <div class="row row2 col-lg-9  col-md-9  col-xs-12  col-sm-10">
+        <!--Company Social Networks Info-->
+                <div class="info col-lg-2 col-md-2 col-sm-12 col-xs-12" id="socialNetworks"> 
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <a href="">
+                                <img src="res/socialLogo/vk.png" alt="Vk" title="Vk">
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">    
+                            <a href="">
+                                <img src="res/socialLogo/facebook.png" alt="facebook" title="facebook">
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <a href="">
+                                <img src="res/socialLogo/google.png" alt="google+" title="google+">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        <!--END Company Social Networks Info-->
+
+        <!--Company Contacts-->                           
+                <div class="info col-lg-10 col-md-10 col-sm-12 col-xs-12" id="companyInfo_MailForm">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6 col-sm-offset-0 col-sm-10 col-xs-10">    
+                            <ul>
+                                <li>Наша адреса:</li>
+                                <li><small>м.Івано-Франківськ</small></li>
+                                <li><small>вул. Шота-Руставелі 1</small></li>
+                            
+                                <li>Телефон:</li> 
+                                <li><small>+380930754178</small></li>
+                                <li><small>55-30-10</small></li> 
+                                <li><small>(Микола Богданович)</small></li>
+                                
+                                <li>Email:</li>
+                                <li>
+                                    <small class="emailInfo">ndpp.boden@gmail.com</small>
+                                    <span class="glyphicon glyphicon-envelope" id="goToEmailForm" aria-hidden="true"></span><br>
+                                    <small class="emailInfo">(надішліть нам повідомлення)</small>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-8 col-md-offset-1 col-md-5 col-sm-offset-0 col-sm-7 col-xs-offset-3 col-xs-6" id="map-canvas">
+                        </div>    
+                    </div>     
+                </div>
+        <!--END Company Contacts-->  
+
+        <!--Mail Form-->
+            <div class="mailForm col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div id="rowMail">
+                    <form ng-app="myApp" ng-controller="validateCtrl" action="php/mail.php" method="post" name="mailForm" onsubmit="return validateForm()">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2" name=>@</span>
+                            <input type="email" name="email" ng-model="email" required class="form-control" placeholder="Введіть ваш email" aria-describedby="basic-addon2" id="partTwo">
+                            <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+                            <span ng-show="myForm.email.$error.required">Email is required.</span>
+                            <span ng-show="myForm.email.$error.email">Invalid email address.</span>
+                            </span>
+                            
+                            
+                            <button ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid" id="sendButton" type="submit"  class="btn btn-success">Надіслати</button>                           
+                        </div>
+                        <div class="emailContent">
+                            <div class="input-group" id="emailForm">
+                                <span class="input-group-addon" id="basic-addon1">
+                                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                                </span>
+                                <textarea type="comment" name="Email" class="form-control" id="emailCont" placeholder="Все що вас цікавить, напишіть будь ласка тут" aria-describedby="basic-addon1" name="emailContent"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                    <script>
+                        
+                    </script>
+                    <button id="goBackButton" type="submit"  class="btn btn-success">Відмінити</button>
+                </div>             
+            </div>
+        <!--END Mail Form-->
+            </div>
+<!--END-COMPANY-INFO-FORM-->
+
+    <!--Weather-->
+      <div class="col-lg-offset-5 col-md-offset-5 col-sm-offset-5 col-xs-offset-5" id="pogoda">
+          <div id="SinoptikInformer" style="width:350px;" class="SinoptikInformer type5"><div class="siHeader"><div class="siLh"><div class="siMh"><a onmousedown="siClickCount();" href="https://ua.sinoptik.ua/" target="_blank">Погода</a><a onmousedown="siClickCount();" class="siLogo" href="https://ua.sinoptik.ua/" target="_blank"> </a> <span id="siHeader"></span></div></div></div><div class="siBody"><table><tbody><tr><td class="siCityV" style="width:100%;"><div class="siCityName"><a onmousedown="siClickCount();" href="https://ua.sinoptik.ua/погода-івано-франківськ" target="_blank">Погода в <span>Івано-Франківську</span></a></div></tr><tr><td style="width:100%;"><div class="siCityV2"><div id="siCont0" class="siBodyContent"><div class="siLeft"><div class="siTerm"></div><div class="siT" id="siT0"></div><div id="weatherIco0"></div></div><div class="siInf"><p>вологість: <span id="vl0"></span></p><p>тиск: <span id="dav0"></span></p><p>вітер: <span id="wind0"></span></p></div></div></div></td></tr></tbody></table><div class="siLinks"><span><a onmousedown="siClickCount();" href="https://ua.sinoptik.ua/погода-кременчук" target="_blank">Погода у Кременчуці</a>&nbsp;</span><span><a onmousedown="siClickCount();" href="https://ua.sinoptik.ua/погода-мелітополь" target="_blank">Погода у Мелітополі</a>&nbsp;</span></div></div><div class="siFooter"><div class="siLf"><div class="siMf"></div></div></div></div><script type="text/javascript" charset="UTF-8" src="//sinoptik.ua/informers_js.php?title=4&amp;wind=2&amp;cities=303009582&amp;lang=ua"></script>
+      </div>
+    <!--END-Weather-->
+
+    <!--DEVELOPER INFO-->
+            <foother>
+                <div id="row3" class="container-fluid">
+                    <p>Pозробник: Zetskyi, zetskyi@gmail.com</p>
+                </div>
+            </foother>
+    <!--DEVELOPER INFO-->
+
+  </div>
+</body>
+</html>
+
